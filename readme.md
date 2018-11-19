@@ -12,17 +12,26 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require piclou/ikcms
+$ composer require "piclou/ikcms @dev"
 ```
 
 ## Usage
 
-- composer require "piclou/ikcms @dev"
-- php artisan make:auth
-- php artisan migrate
-- php artisan ikcms:install
-- php artisan vendor:publish --provider="Piclou\Ikcms\IkcmsServiceProvider"
-- php artisan vendor:publish --provider="Aschmelyun\Larametrics\LarametricsServiceProvider"
+``` bash
+$ php artisan make:auth
+```
+``` bash
+$ php artisan migrate
+```
+``` bash
+$ php artisan ikcms:install
+```
+``` bash
+$ php artisan vendor:publish --provider="Piclou\Ikcms\IkcmsServiceProvider"
+```
+``` bash
+$ php artisan vendor:publish --provider="Aschmelyun\Larametrics\LarametricsServiceProvider"
+```
 - Providers
 
 Piclou\Ikcms\IkcmsServiceProvider::class,
