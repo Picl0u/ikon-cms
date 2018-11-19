@@ -1,0 +1,53 @@
+// Default
+$body_front_background:#FFFFFF; // Couleur du background pour le front office
+$body_admin_background:#1d2435; // Couleur du background pour l'administration
+$duration_transition:0.3s; // Durée des transitions des liens
+$theme_color:#324D5C; // Couleur principal du thème
+$theme_second_color:#fd7801;
+$container_size:1200px; // Taille du container principal
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700,700i');
+$font_family_default: 'Roboto', sans-serif;
+$font_family_title: 'Roboto', sans-serif;
+$font_family_other: 'Roboto', sans-serif;
+$font_size_default: 0.875rem;
+$line_height_default: 1.2;
+$font_color_default: #000;
+$title_color:#000;
+$title_border:#DDD;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #f03c69;
+
+// Header
+$admin_header_background:#181f2c;
+$admin_header_color:#f8f7f3;
+
+// Navigation
+$admin_navigation_background:#131722;
+$admin_navigation_color:#FFF;
+$admin_navigation_border:#232631;
+$admin_navigation_background_active:#1c2030;
+
+// Tabs
+$admin_tab_background:#FFF;
+$admin_tab_color:#3f4858;
+$admin_tab_border:#FFF;
+$admin_tab_background_active:#FFF;
+$admin_tab_color_active:#181f2c;
+$admin_tab_border_active:$theme_second_color;
+
+// Formulaires
+$input_height: 28px;
+$input_border: #bcbec0;
+$input_color: #000;
+$input_background: #e6e7e8;
+
+
+// Include the differents library
+@import "../vendors/toastr/toastr";
