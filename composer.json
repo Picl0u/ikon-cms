@@ -1,7 +1,7 @@
 {
     "name": "piclou/ikcms",
-    "description": ":description",
-    "license": "license",
+    "description": "description",
+    "license": "MIT",
     "authors": [
         {
             "name": "Vincent Herbaut",
