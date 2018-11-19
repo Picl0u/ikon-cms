@@ -17,15 +17,18 @@ $ composer require piclou/ikcms
 
 ## Usage
 
-0 - composer require "piclou/ikcms @dev"
-1 - php artisan make:auth
-2 - php artisan migrate
-3 - php artisan ikcms:install
-4 - php artisan vendor:publish --provider="Piclou\Ikcms\IkcmsServiceProvider"
-5 - php artisan vendor:publish --provider="Aschmelyun\Larametrics\LarametricsServiceProvider"
-6 - Providers
+- composer require "piclou/ikcms @dev"
+- php artisan make:auth
+- php artisan migrate
+- php artisan ikcms:install
+- php artisan vendor:publish --provider="Piclou\Ikcms\IkcmsServiceProvider"
+- php artisan vendor:publish --provider="Aschmelyun\Larametrics\LarametricsServiceProvider"
+- Providers
+
 Piclou\Ikcms\IkcmsServiceProvider::class,
+
 'IkCms' => \Piclou\Ikcms\Facades\Ikcms::class,
+
 'IkForm' => \Piclou\Ikcms\Facades\IkForm::class,
 
 ## Change log
