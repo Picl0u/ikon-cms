@@ -102,8 +102,7 @@ class Ikcms extends Facade
     public function uploadFile(string $directory, $file): string
     {
         $directory = str_replace("\\","/",$directory);
-        $file = str_replace("\\","/",$file);
-        $dir = config('ikCommerce.fileUploadFolder') . "/" .$directory;
+        $dir = config('ikcms.fileUploadFolder') . "/" .$directory;
         if(!file_exists($dir)){
             if(!mkdir($dir,0770, true)){
                 dd('Echec lors de la création du répertoire : '.$dir);
