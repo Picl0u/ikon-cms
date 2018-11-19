@@ -91,9 +91,6 @@ class SettingController extends Controller
             "slider.duration" => $request->slider_duration,
             "slider.duration_transition" => $request->slider_duration_transition,
         ];
-        activity()
-            ->causedBy(auth()->user())
-            ->log('Modification des paramètres du site');
         setting($save)->save();
         session()->flash('success', __("ikcms::admin.setting_success"));
         return redirect()->route($this->route. 'index');
