@@ -17,6 +17,17 @@ $ composer require piclou/ikcms
 
 ## Usage
 
+0 - composer require "piclou/ikcms @dev"
+1 - php artisan make:auth
+2 - php artisan migrate
+3 - php artisan ikcms:install
+4 - php artisan vendor:publish --provider="Piclou\Ikcms\IkcmsServiceProvider"
+5 - php artisan vendor:publish --provider="Aschmelyun\Larametrics\LarametricsServiceProvider"
+6 - Providers
+Piclou\Ikcms\IkcmsServiceProvider::class,
+'IkCms' => \Piclou\Ikcms\Facades\Ikcms::class,
+'IkForm' => \Piclou\Ikcms\Facades\IkForm::class,
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
